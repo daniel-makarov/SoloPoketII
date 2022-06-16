@@ -1,0 +1,44 @@
+.text_box{
+    width: 540px;
+    border-radius: 10px;
+    size: 40px;
+    padding: 5px;
+    margin-bottom: 20px;
+    margin-top: 5px;
+    box-shadow: none;
+    border: none;
+    height: 36px;
+}
+
+#btn {
+    border: none;
+    color: rgb(255, 255, 255);
+    padding: 16px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+    border-radius: 30px;
+    background-color: #fc8815;
+  }
+  
+#btn:hover{
+  background-color: rgb(245, 35, 199);
+  color: white;
+}
+
+#window{
+    margin-top: 50px;
+    background-color: #ffffff00;
+    color: #fff;
+    padding: 15px;
+    border-radius: 20px;
+    box-shadow: 0 0 5px rgb(7, 7, 7);
+}
+
+#recepient_text_coin{
+    font-size: 20px;
+}

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <title>SoloPoket</title>
+    <script src="https://cdn.jsdelivr.net/npm/web3@latest/dist/web3.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/moralis/dist/moralis.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="sendERC20.css">
+  </head>
+  <body class="background_color">
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">SoloPoketII</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <div class="nav-item active" style="padding-left: 55px;">
+                  <a class="nav-link" href="index.html" style="margin-left: 25px;">Exchange<span class="sr-only">(current)</span></a>
+                </div>
+                <div class="nav-item active">
+                  <a class="nav-link" href="sendEth.html" style="margin-left: 25px;">Send Ethereum<span class="sr-only">(current)</span></a>
+                </div>
+                <div class="nav-item active">
+                  <a class="nav-link" href="sendERC20.html" style="margin-left: 25px;">Transfer ERC-20 Tokens<span class="sr-only">(current)</span></a>
+                </div>
+                <div class="nav-item active">
+                  <a class="nav-link" href="sendERC721.html" style="margin-left: 25px;">Manage ERC-721 Tokens<span class="sr-only">(current)</span></a>
+                </div>
+            </ul>
+        </div>
+    </nav>
+    <br><br><br><br><br><br><br><br>
+
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-6 offset-md-3" id="window">
+                <h4>Send ERC-20</h4>
+                <br>
+                <div id="recepient_text_coin">Contract Address</div>
+                <div><input class="text_box form-control" type="text" id="contractAddress" placeholder="e.g. 0xC169E3b42FC9513CB5b79626Db8db3a3631e6dd4"></div>
+
+                <div id="recepient_text_coin">Decimals</div>
+                <div><input class="text_box form-control" type="text" id="decimals" placeholder="e.g. 18"></div>
+
+                <div id="recepient_text_coin">Amount of Tokens</div>
+                <div><input class="text_box form-control" type="text" id="amountOfTokens" placeholder="e.g. 42"></div>
+
+                <div id="recepient_text_coin">Receiver</div>
+                <div><input class="text_box form-control" type="text" id="receiver" placeholder="e.g. 0x535C3ceD1A96Dc2bD69e401e76d1994DB3237e1F"></div>
+                <div><center><button id="btn" id="send_erc20_button" onclick="send_erc20()">Send ERC20 Token(s)</button></div></center>
+
+            </div>
+        </div>
+    </div>
+
+
+    <script type="text/javascript" src="sendCoin.js"></script>
+  </body>
+</html>
